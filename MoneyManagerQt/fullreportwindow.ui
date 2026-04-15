@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>FullReportWindow</class>
+ <widget class="QDialog" name="FullReportWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>436</width>
+    <height>381</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <widget class="QTableView" name="tableView">
+   <property name="geometry">
+    <rect>
+     <x>50</x>
+     <y>40</y>
+     <width>331</width>
+     <height>291</height>
+    </rect>
+   </property>
+   <property name="editTriggers">
+    <set>QAbstractItemView::EditTrigger::AnyKeyPressed|QAbstractItemView::EditTrigger::DoubleClicked</set>
+   </property>
+   <property name="alternatingRowColors">
+    <bool>false</bool>
+   </property>
+  </widget>
+  <widget class="QWidget" name="layoutWidget">
+   <property name="geometry">
+    <rect>
+     <x>50</x>
+     <y>330</y>
+     <width>331</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <layout class="QHBoxLayout" name="horizontalLayout">
+    <item>
+     <widget class="QPushButton" name="ButtonCancel">
+      <property name="styleSheet">
+       <string notr="true">QPushButton {
+    background-color: rgb(152, 125, 116);
+    color: white;
+    border-style: solid;
+    border-width: 2px;
+    border-color: #000000;
+    border-radius: 15px;
+    padding: 5px;
+}
+
+QPushButton:hover {
+    background-color: rgb(200, 165, 146);
+}
+
+QPushButton:pressed {
+    background-color: rgb(106, 86, 78);
+}</string>
+      </property>
+      <property name="text">
+       <string>Назад</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QPushButton" name="ButtonSet">
+      <property name="styleSheet">
+       <string notr="true">QPushButton {
+    background-color: rgb(141, 127, 0);
+    color: white;
+    border-style: solid;
+    border-width: 2px;
+    border-color: #000000;
+    border-radius: 15px;
+    padding: 5px;
+}
+
+QPushButton:hover {
+    background-color:rgb(220, 192, 0);
+}
+
+QPushButton:pressed {
+    background-color: rgb(100, 91, 0);
+}</string>
+      </property>
+      <property name="text">
+       <string>Изменить</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QPushButton" name="ButtonDelete">
+      <property name="styleSheet">
+       <string notr="true">QPushButton {
+    background-color: rgb(199, 19, 0);
+    color: white;
+    border-style: solid;
+    border-width: 2px;
+    border-color: #000000;
+    border-radius: 15px;
+    padding: 5px;
+}
+
+QPushButton:hover {
+    background-color: rgb(255, 58, 0);
+}
+
+QPushButton:pressed {
+    background-color: rgb(129, 6, 0);}</string>
+      </property>
+      <property name="text">
+       <string>Удалить</string>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
